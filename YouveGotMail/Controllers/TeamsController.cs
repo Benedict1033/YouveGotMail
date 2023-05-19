@@ -25,24 +25,6 @@ namespace YouveGotMail.Controllers
     [RoutePrefix("api")]
     public class TeamsController : ApiController
     {
-
-        //[HttpGet]
-        //[Route("test")]
-        //public async Task  test() {
-        //    var httpClient = new HttpClient();
-        //    httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-        //    string url = "https://prod-38.southeastasia.logic.azure.com:443/workflows/a04ca71d89b348119028b89b5c479cb4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=-_3zLapiWYoqIUbP4cW9hyCN0d2fWFvIQMRycvCPoJI";
-        //    //string url = "https://prod-38.southeastasia.logic.azure.com:443/workflows/df8cd341e52f48cbbff27f7eddac21b3/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=LBrdHFHcuCghPxJnc_fAjV60zirhBvs7IEf22qHENYc";
-
-        //    var content = new StringContent("", Encoding.UTF8, "application/json");
-        //    using (var response = await httpClient.PostAsync(url, content))
-        //    {
-        //        response.EnsureSuccessStatusCode();
-        //    }
-
-        //}
-
-
         ObjectCache cache = MemoryCache.Default;
 
         [HttpPost]
@@ -79,16 +61,6 @@ namespace YouveGotMail.Controllers
             else
                 return "token fail";
         }
-
-
-
-        //[HttpPost]
-        //[Route("id")]
-        //public string messageId(id id)
-        //{
-        //    return id.message;
-
-        //}
 
         [HttpPost]
         [Route("teams")]
